@@ -1,4 +1,4 @@
-// Created by iWeb 3.0.3 local-build-20151213
+// Created by iWeb 3.0.3 local-build-20151214
 
 function createMediaStream_id2()
 {return IWCreatePhotocast("http://www.tidalpeat.com/Tidal_Peat/Photos_files/rss.xml",true);}
@@ -9,7 +9,7 @@ function layoutMediaGrid_id2(range)
 {createMediaStream_id2().load('http://www.tidalpeat.com/Tidal_Peat',function(imageStream)
 {if(range==null)
 {range=new IWRange(0,imageStream.length);}
-IWLayoutPhotoGrid('id2',new IWPhotoGridLayout(3,new IWSize(165,165),new IWSize(165,0),new IWSize(204,180),27,27,0,new IWSize(2,2)),new IWEmptyStroke(),imageStream,range,null,null,1.000000,{backgroundColor:'rgb(0, 0, 0)',reflectionHeight:100,reflectionOffset:2,captionHeight:100,fullScreen:1,transitionIndex:9},'Media/slideshow.html','widget1','widget2','widget3')});}
+IWLayoutPhotoGrid('id2',new IWPhotoGridLayout(3,new IWSize(165,165),new IWSize(165,0),new IWSize(204,180),27,27,0,new IWSize(2,2)),new IWEmptyStroke(),imageStream,range,null,null,1.000000,null,'Media/slideshow.html','widget1','widget2','widget3')});}
 function relayoutMediaGrid_id2(notification)
 {var userInfo=notification.userInfo();var range=userInfo['range'];layoutMediaGrid_id2(range);}
 function onStubPage()
