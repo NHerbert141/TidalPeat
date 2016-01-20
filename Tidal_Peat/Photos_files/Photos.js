@@ -9,7 +9,7 @@ function layoutMediaGrid_id2(range)
 {createMediaStream_id2().load('http://www.tidalpeat.com/Tidal_Peat',function(imageStream)
 {if(range==null)
 {range=new IWRange(0,imageStream.length);}
-IWLayoutPhotoGrid('id2',new IWPhotoGridLayout(3,new IWSize(165,165),new IWSize(165,0),new IWSize(204,180),27,27,0,new IWSize(2,2)),new IWEmptyStroke(),imageStream,range,null,null,1.000000,null,'Media/slideshow.html','widget1','widget2','widget3')});}
+IWLayoutPhotoGrid('id2',new IWPhotoGridLayout(3,new IWSize(178,178),new IWSize(178,16),new IWSize(204,209),27,27,0,new IWSize(2,2)),new IWEmptyStroke(),imageStream,range,null,null,1.000000,null,'Media/slideshow.html','widget1','widget2','widget3')});}
 function relayoutMediaGrid_id2(notification)
 {var userInfo=notification.userInfo();var range=userInfo['range'];layoutMediaGrid_id2(range);}
 function onStubPage()
